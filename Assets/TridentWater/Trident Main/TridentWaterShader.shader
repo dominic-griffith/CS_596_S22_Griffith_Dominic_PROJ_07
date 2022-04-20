@@ -36,6 +36,7 @@ Shader "Custom/TridentWater" {
         float4 _WorleyIntensities;
         float _PerlinNoiseScale;
         float _PerlinNoiseIntensity;
+        float _WaveTime;
         
 
         struct Input {
@@ -56,7 +57,7 @@ Shader "Custom/TridentWater" {
             float sampleTotal = 0;
             float intensityTotal = 0;
             for (int i = 0; i < 4; i++) {
-                float speedOffset = _WorleySpeeds[i] * _Time[0] * float2(1, 1);
+                float speedOffset = _WorleySpeeds[i] * _WaveTime;// * float2(1, 1);
                 sampleTotal += sampleChannel(tex, i, (uv + speedOffset) *_WorleyScales[i]) * _WorleyIntensities[i];
                 intensityTotal += _WorleyIntensities[i];
             }
