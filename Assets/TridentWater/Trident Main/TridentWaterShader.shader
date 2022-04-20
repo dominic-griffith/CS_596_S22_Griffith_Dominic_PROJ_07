@@ -4,6 +4,7 @@ Shader "Custom/TridentWater" {
         _Gradient ("Gradient", 2D) = "white" {}
         _WorleyNoiseA ("Worley Noise A", 2D) = "white" {}
         _WorleyNoiseB ("Worley Noise B", 2D) = "white" {}
+        _PerlinNoise ("Perlin Noise", 2D) = "white" {}
         
         
         _Glossiness ("Smoothness", Range(0,1)) = 0.5
@@ -27,11 +28,14 @@ Shader "Custom/TridentWater" {
         sampler2D _WorleyNoiseA;
         float4 _WorleyNoiseA_ST;
         sampler2D _WorleyNoiseB;
+        sampler2D _PerlinNoise;
 
         float _WaveMasterIntensity;
         float4 _WorleySpeeds;
         float4 _WorleyScales;
         float4 _WorleyIntensities;
+        float _PerlinNoiseScale;
+        float _PerlinNoiseIntensity;
         
 
         struct Input {
@@ -84,7 +88,10 @@ Shader "Custom/TridentWater" {
             // Metallic and smoothness come from slider variables
             o.Metallic = _Metallic * waveHeight;
             o.Smoothness = _Glossiness * waveHeight;
+            o.Normal = tex2Dlod(_PerlinNoise, float4(IN.uv_WorleyNoiseB, 0, 0) * _PerlinNoiseScale) * _PerlinNoiseIntensity;
             o.Alpha = c.a;
+
+            // o.Albedo = tex2Dlod(_PerlinNoise, float4(IN.uv_WorleyNoiseB, 0, 0) * _PerlinNoiseScale);
         }
         ENDCG
     }

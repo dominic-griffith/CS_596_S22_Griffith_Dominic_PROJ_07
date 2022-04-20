@@ -6,8 +6,10 @@ using UnityEngine;
 public class TridentController : MonoBehaviour {
     public Vector4 speeds;
     public Vector4 scales;
+    public float perlinNoiseScale;
     public float masterIntensity;
     public Vector4 intensities;
+    public float perlinNoiseIntensity;
 
     private Material material;
 
@@ -20,6 +22,8 @@ public class TridentController : MonoBehaviour {
         material.SetFloat("_WaveMasterIntensity", masterIntensity);
         material.SetVector("_WorleySpeeds", speeds);
         material.SetVector("_WorleyScales", scales);
+        material.SetFloat("_PerlinNoiseScale", perlinNoiseScale);
         material.SetVector("_WorleyIntensities", intensities);
+        material.SetFloat("_PerlinNoiseIntensity", perlinNoiseIntensity);
     }
 }
