@@ -12,6 +12,7 @@ public class PGCTerrain : MonoBehaviour
     public TerrainData terrainData;
 
     public Vector3 heightMapScale = new Vector3(1, 1, 1);
+    //public float maximumHeight = 600f;
     public float hillVariance = 20f;
     public float hillVariance2 = 100f;
     public Texture2D heightMapImage;
@@ -39,6 +40,9 @@ public class PGCTerrain : MonoBehaviour
             {
                 multiplier[x, z] = Mathf.PerlinNoise((offset.x + (float)x / (float)terrainData.heightmapResolution) * hillVariance, offset.y + ((float)z / (float)terrainData.heightmapResolution) * hillVariance) / 10f;
                 multiplier2[x, z] = Mathf.PerlinNoise((offset.x + (float)x / (float)terrainData.heightmapResolution) * hillVariance2, offset.y + ((float)z / (float)terrainData.heightmapResolution) * hillVariance2) / 10f;
+                //if(heightMapScale.y > maximumHeight)
+                //    heightMap[x, z] = heightMapImage.GetPixel((int)(x * heightMapScale.x), (int)(z * heightMapScale.z)).grayscale * heightMapScale.y + multiplier[x, z] + multiplier2[x, z];
+                //else
                 heightMap[x, z] = heightMapImage.GetPixel((int)(x * heightMapScale.x), (int)(z * heightMapScale.z)).grayscale * heightMapScale.y + multiplier[x, z] + multiplier2[x, z];
             }
         }

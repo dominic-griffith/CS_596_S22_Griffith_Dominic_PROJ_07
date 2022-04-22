@@ -14,6 +14,7 @@ public class PGCTerrainEditor : Editor
     SerializedProperty hillVariance;
     SerializedProperty offset;
     SerializedProperty hillVariance2;
+    SerializedProperty maximumHeight;
 
     bool showPerlinMap = false;
 
@@ -24,6 +25,7 @@ public class PGCTerrainEditor : Editor
         hillVariance = serializedObject.FindProperty("hillVariance");
         offset = serializedObject.FindProperty("offset");
         hillVariance2 = serializedObject.FindProperty("hillVariance2");
+        //maximumHeight = serializedObject.FindProperty("maximumHeight");
     }
 
 
@@ -44,6 +46,7 @@ public class PGCTerrainEditor : Editor
             EditorGUILayout.PropertyField(offset);
             EditorGUILayout.PropertyField(heightMapImage);
             EditorGUILayout.PropertyField(heightMapScale);
+            //EditorGUILayout.PropertyField(maximumHeight);
             if (GUILayout.Button("Perlin Map"))
             {
                 terrain.PerlinMap();
