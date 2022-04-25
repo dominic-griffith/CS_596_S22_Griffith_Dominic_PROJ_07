@@ -5,19 +5,14 @@ using UnityEngine;
 public class FishAnimationController : MonoBehaviour
 {
     Animator animator;
-    int isSwimmingHash;
-    int isSwimmingFastHash;
-    bool set;
-    int count;
+    int isFastHash;
     public float velocity;
     public float velocityCheck;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
-        isSwimmingHash = Animator.StringToHash("isSwimming");
-        isSwimmingFastHash = Animator.StringToHash("isSwimmingFast");
-        set = false;
+        isFastHash = Animator.StringToHash("isFast");
      }
     
 
@@ -25,10 +20,10 @@ public class FishAnimationController : MonoBehaviour
     void Update()
     {
         if(velocity < velocityCheck){
-            animator.SetBool(isSwimmingHash, true);
+            animator.SetBool(isFastHash, false);
         }
         else{
-            animator.SetBool(isSwimmingFastHash, true);
+            animator.SetBool(isFastHash, true);
         }
     }
 }
