@@ -12,7 +12,8 @@ Shader "Custom/TridentWater" {
     }
     
     SubShader {
-        Tags { "Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Transparent" "DisableBatching"="True" }
+        Cull off
+        Tags { "Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Opaque" "DisableBatching"="True" }
         Blend One OneMinusSrcAlpha
         ZWrite Off
         LOD 200
@@ -90,7 +91,8 @@ Shader "Custom/TridentWater" {
             o.Metallic = _Metallic * waveHeight;
             o.Smoothness = _Glossiness * waveHeight;
             o.Normal = tex2Dlod(_PerlinNoise, float4(IN.uv_WorleyNoiseB, 0, 0) * _PerlinNoiseScale) * _PerlinNoiseIntensity;
-            o.Alpha = c.a;
+            o.Alpha = 1;
+            // o.Alpha = c.a;
 
             // o.Albedo = tex2Dlod(_PerlinNoise, float4(IN.uv_WorleyNoiseB, 0, 0) * _PerlinNoiseScale);
         }
