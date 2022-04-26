@@ -12,7 +12,8 @@ Shader "Custom/TridentWater" {
     }
     
     SubShader {
-        Tags { "Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Transparent" "DisableBatching"="True" }
+        Cull off
+        Tags { "Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Opaque" "DisableBatching"="True" }
         Blend One OneMinusSrcAlpha
         ZWrite Off
         LOD 200
@@ -36,6 +37,7 @@ Shader "Custom/TridentWater" {
         float4 _WorleyIntensities;
         float _PerlinNoiseScale;
         float _PerlinNoiseIntensity;
+        float _WaveTime;
         
 
         struct Input {
@@ -56,7 +58,7 @@ Shader "Custom/TridentWater" {
             float sampleTotal = 0;
             float intensityTotal = 0;
             for (int i = 0; i < 4; i++) {
-                float speedOffset = _WorleySpeeds[i] * _Time[0] * float2(1, 1);
+                float speedOffset = _WorleySpeeds[i] * _WaveTime;// * float2(1, 1);
                 sampleTotal += sampleChannel(tex, i, (uv + speedOffset) *_WorleyScales[i]) * _WorleyIntensities[i];
                 intensityTotal += _WorleyIntensities[i];
             }
@@ -89,7 +91,8 @@ Shader "Custom/TridentWater" {
             o.Metallic = _Metallic * waveHeight;
             o.Smoothness = _Glossiness * waveHeight;
             o.Normal = tex2Dlod(_PerlinNoise, float4(IN.uv_WorleyNoiseB, 0, 0) * _PerlinNoiseScale) * _PerlinNoiseIntensity;
-            o.Alpha = c.a;
+            o.Alpha = 1;
+            // o.Alpha = c.a;
 
             // o.Albedo = tex2Dlod(_PerlinNoise, float4(IN.uv_WorleyNoiseB, 0, 0) * _PerlinNoiseScale);
         }
