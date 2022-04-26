@@ -53,6 +53,7 @@ public class CharacterController : MonoBehaviour {
         if (Input.GetKey(LEFT_KEY)) rigidbody.AddForce(-transform.right * (movementForce * Time.deltaTime));
         if (Input.GetKey(RIGHT_KEY)) rigidbody.AddForce(transform.right * (movementForce * Time.deltaTime));
         
+        // note: these up/down movement commands will probably eventually be replaced with a ballast tank fill/drain that affects buoyancy
         if (Input.GetKey(UP_KEY)) rigidbody.AddForce(transform.up * (movementForceY * Time.deltaTime));
         if (Input.GetKey(DOWN_KEY)) rigidbody.AddForce(-transform.up * (movementForceY * Time.deltaTime));
     }
@@ -63,7 +64,6 @@ public class CharacterController : MonoBehaviour {
         float waveOffsetTop = (transform.position.y + (height / 2f)) - waveHeight;
         float amountSubmerged = 1 - Mathf.Clamp01(waveOffsetTop / height);
         float localBuoyancy = buoyancy * amountSubmerged * -Physics.gravity.y * rigidbody.mass;
-        print("A: " + amountSubmerged + ", B: " + localBuoyancy);
         rigidbody.AddForce(new Vector3(0, localBuoyancy, 0), ForceMode.Acceleration);
     }
 }

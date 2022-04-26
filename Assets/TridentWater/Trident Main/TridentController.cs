@@ -1,9 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[ExecuteInEditMode]
 public class TridentController : MonoBehaviour {
+    [Header("Tiling")]
+    public Transform tilePrefab;
+    public Vector2Int tileCount;
+    
+    [Header("Wave Parameters")]
     public Vector4 speeds;
     public Vector4 scales;
     public float perlinNoiseScale;
@@ -11,14 +16,25 @@ public class TridentController : MonoBehaviour {
     public Vector4 intensities;
     public float perlinNoiseIntensity;
 
+    private List<Transform> tiles;
     private ProceduralMeshGen meshGen;
     private Material material;
     private float waveTime = 0;
 
 
     private void Awake() {
-        meshGen = GetComponent<ProceduralMeshGen>();
-        material = GetComponent<MeshRenderer>().sharedMaterial;
+        meshGen = tilePrefab.GetComponent<ProceduralMeshGen>();
+        material = tilePrefab.GetComponent<MeshRenderer>().sharedMaterial;
+    }
+
+    private void Start() {
+        for (int x = 0; x < tileCount.x; x++) {
+            for (int z = 0; z < tileCount.y; z++) {
+                Transform newTile = Instantiate(tilePrefab, transform);
+                newTile.transform.localPosition = new Vector3(x * meshGen.scale.x, 0, z * meshGen.scale.y);
+                newTile.GetComponent<ProceduralMeshGen>().generateMesh();
+            }
+        }
     }
 
     private void Update() {

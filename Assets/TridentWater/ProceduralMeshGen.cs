@@ -2,15 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[ExecuteInEditMode]
 public class ProceduralMeshGen : MonoBehaviour {
     public float materialScale = 10f;
 
     public Vector2Int resolution; // the number of vertices in each direction
     public Vector2 scale; // the scale of the mesh
 
-    public bool run = false;
-    
     private MeshFilter meshFilter;
     private MeshCollider meshCollider;
     private Mesh mesh;
@@ -19,20 +16,12 @@ public class ProceduralMeshGen : MonoBehaviour {
         meshFilter = gameObject.GetComponent<MeshFilter>();
         meshCollider = gameObject.GetComponent<MeshCollider>();
     }
-
-    private void Update() {
-        if (run) {
-            run = false;
-
-            generateMesh();
-        }
-    }
     
     
     
 
     // generates the mesh and attaches it to the gameObject
-    private void generateMesh() {
+    public void generateMesh() {
         Vector3[] vertices = new Vector3[(resolution.x + 1) * (resolution.y + 1)];
         Vector2[] uv = new Vector2[(resolution.x + 1) * (resolution.y + 1)];
         int[] triangles = new int[resolution.x * resolution.y * 6];
