@@ -416,7 +416,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waterPlane: {fileID: 1933556357}
   buoyancy: 1
-  movementForce: 5
+  movementForce: 500
+  movementForceY: 500
+  mouseSensitivity: 30
 --- !u!136 &791273586
 CapsuleCollider:
   m_ObjectHideFlags: 0
