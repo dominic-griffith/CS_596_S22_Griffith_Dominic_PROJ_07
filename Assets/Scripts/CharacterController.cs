@@ -21,6 +21,10 @@ public class CharacterController : MonoBehaviour {
     private Collider collider;
     private Rigidbody rigidbody;
 
+    public float waterHeight;
+    public float gravity = 9.8f;
+    private float velocity = 0;
+
     private void Awake() {
         mainCamera = Camera.main;
         collider = GetComponent<Collider>();
@@ -52,18 +56,28 @@ public class CharacterController : MonoBehaviour {
         if (Input.GetKey(BACKWARD_KEY)) rigidbody.AddForce(-transform.forward * (movementForce * Time.deltaTime));
         if (Input.GetKey(LEFT_KEY)) rigidbody.AddForce(-transform.right * (movementForce * Time.deltaTime));
         if (Input.GetKey(RIGHT_KEY)) rigidbody.AddForce(transform.right * (movementForce * Time.deltaTime));
-        
+
         // note: these up/down movement commands will probably eventually be replaced with a ballast tank fill/drain that affects buoyancy
-        if (Input.GetKey(UP_KEY)) rigidbody.AddForce(transform.up * (movementForceY * Time.deltaTime));
-        if (Input.GetKey(DOWN_KEY)) rigidbody.AddForce(-transform.up * (movementForceY * Time.deltaTime));
+        if (transform.position.y < waterHeight)
+        {
+            if (Input.GetKey(UP_KEY)) rigidbody.AddForce(transform.up * (movementForceY * Time.deltaTime));
+            if (Input.GetKey(DOWN_KEY)) rigidbody.AddForce(-transform.up * (movementForceY * Time.deltaTime));
+        }
+        else
+        {
+            velocity -= gravity * Time.deltaTime;
+            rigidbody.AddForce(new Vector3(0, velocity, 0));
+        }
+
+        
     }
     
     private void applyBuoyantForce() {
-        float height = collider.bounds.size.y;
-        float waveHeight = waterPlane.getWaveHeight(transform.position);
-        float waveOffsetTop = (transform.position.y + (height / 2f)) - waveHeight;
-        float amountSubmerged = 1 - Mathf.Clamp01(waveOffsetTop / height);
-        float localBuoyancy = buoyancy * amountSubmerged * -Physics.gravity.y * rigidbody.mass;
-        rigidbody.AddForce(new Vector3(0, localBuoyancy, 0), ForceMode.Acceleration);
+            float height = collider.bounds.size.y;
+            float waveHeight = waterPlane.getWaveHeight(transform.position);
+            float waveOffsetTop = (transform.position.y + (height / 2f)) - waveHeight;
+            float amountSubmerged = 1 - Mathf.Clamp01(waveOffsetTop / height);
+            float localBuoyancy = buoyancy * amountSubmerged * -Physics.gravity.y * rigidbody.mass;
+            rigidbody.AddForce(new Vector3(0, localBuoyancy, 0), ForceMode.Acceleration);
     }
 }
