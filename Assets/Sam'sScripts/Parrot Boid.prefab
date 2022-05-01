@@ -7,9 +7,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2383979640234041080, guid: bdd28e6d1db6f4f83a5881d795ba344e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7017027657656587331, guid: bdd28e6d1db6f4f83a5881d795ba344e, type: 3}
       propertyPath: m_Name
       value: Parrot Boid
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017739661181662532, guid: bdd28e6d1db6f4f83a5881d795ba344e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7650118054009245433, guid: bdd28e6d1db6f4f83a5881d795ba344e, type: 3}
       propertyPath: m_RootOrder

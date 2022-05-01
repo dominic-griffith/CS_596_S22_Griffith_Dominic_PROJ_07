@@ -6,7 +6,7 @@ public class Spawner : MonoBehaviour {
 
     public enum GizmoType { Never, SelectedOnly, Always }
 
-    public Boid prefab;
+    public GameObject prefab;
     public float spawnRadius = 10;
     public int spawnCount = 10;
     public GizmoType showSpawnRegion;
@@ -16,7 +16,7 @@ public class Spawner : MonoBehaviour {
         for (int i = 0; i < spawnCount; i++)
         {
             Vector3 pos = transform.position + Random.insideUnitSphere * spawnRadius;
-            Boid boid = Instantiate (prefab);
+            Boid boid = Instantiate(prefab).GetComponent<Boid>();
             boid.transform.position = pos;
             boid.transform.forward = Random.insideUnitSphere;
 
