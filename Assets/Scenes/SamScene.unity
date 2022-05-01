@@ -376,11 +376,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 956a2c5345bc44e50b7d91a92b938f3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3577715318500786718, guid: 444cad7a751c849588a81906671db685, type: 3}
-  numGroups: 0
+  prefab: {fileID: 173390498, guid: b6c8bf51a78e448be8e8778b020eb18f, type: 3}
   spawnRadius: 10
-  spawnCount: 2200
+  spawnCount: 1000
   showSpawnRegion: 1
+  type: 1
 --- !u!4 &2129880707
 Transform:
   m_ObjectHideFlags: 0
@@ -403,6 +403,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 783010205264853478, guid: 444cad7a751c849588a81906671db685, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 935709745092904062, guid: 444cad7a751c849588a81906671db685, type: 3}
       propertyPath: m_RootOrder
       value: 4
