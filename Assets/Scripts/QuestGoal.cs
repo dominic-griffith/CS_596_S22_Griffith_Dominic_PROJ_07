@@ -15,16 +15,9 @@ public class QuestGoal
         return (currentAmount >= requiredAmount);
     }
 
-    public void Found()
-    {
-        if (goalType == GoalType.Find)
-            currentAmount++;
-    }
-
     public void Collected()
     {
-        if (goalType == GoalType.Collect)
-            currentAmount++;
+        currentAmount++;
     }
 }
 
