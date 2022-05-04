@@ -3,15 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[ExecuteInEditMode, ImageEffectAllowedInSceneView]
 public class UnderwaterEffect : MonoBehaviour {
-    private Material material;
+    private Material waterEffectMaterial;
+    private TridentController waterPlane;
 
     private void OnEnable() {
-        material = Resources.Load<Material>("UnderwaterEffect");
+        waterEffectMaterial = Resources.Load<Material>("UnderwaterEffect");
+        waterPlane = GameObject.Find("TridentWater").GetComponent<TridentController>();
     }
 
     private void OnRenderImage(RenderTexture src, RenderTexture dest) {
-        Graphics.Blit(src, dest, material);
+        // check if camera is underwater
+        float posY = transform.position.y;
+        float waveHeight = waterPlane.getWaveHeight(transform.position) + waterPlane.transform.position.y;
+        bool isCameraSubmerged = posY < waveHeight;
+        
+        // only apply underwater shader if we are actually underwater
+        if (isCameraSubmerged) Graphics.Blit(src, dest, waterEffectMaterial);
+        else Graphics.Blit(src, dest);
     }
 }
