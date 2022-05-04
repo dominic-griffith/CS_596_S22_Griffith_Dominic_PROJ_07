@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: BoidSettings
   m_EditorClassIdentifier: 
   minSpeed: 2
-  maxSpeed: 5
-  perceptionRadius: 1000
-  avoidanceRadius: 2
-  maxSteerForce: 3
+  maxSpeed: 4
+  perceptionRadius: 100
+  avoidanceRadius: 1
+  maxSteerForce: 0.5
   alignWeight: 1
   cohesionWeight: 1
   seperateWeight: 1
