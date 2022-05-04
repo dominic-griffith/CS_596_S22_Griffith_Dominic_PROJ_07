@@ -133,7 +133,8 @@ MonoBehaviour:
   buoyancy: 1
   movementForce: 10000
   movementForceY: 10000
-  mouseSensitivity: 60
+  waterHeight: 0
+  gravity: 9.8
 --- !u!1 &1132264277778986640
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,6 +146,7 @@ GameObject:
   - component: {fileID: 1132264277778986645}
   - component: {fileID: 1132264277778986642}
   - component: {fileID: 1132264277778986643}
+  - component: {fileID: 751845873780696144}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -218,3 +220,15 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132264277778986640}
   m_Enabled: 1
+--- !u!114 &751845873780696144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132264277778986640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9278649d6cbe940fea9ff44edcfa8459, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
