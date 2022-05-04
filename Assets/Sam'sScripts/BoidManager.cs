@@ -8,22 +8,30 @@ public class BoidManager : MonoBehaviour {
 
     public BoidSettings settings;
     public ComputeShader compute;
-    Boid[] boids;
+    public int type;
+    List<Boid> boids; 
+    Boid[] allBoids;
 
     void Start () {
-        boids = FindObjectsOfType<Boid> ();
-        foreach (Boid b in boids) {
-            b.Initialize (settings, null);
+        boids = new List<Boid>();
+        allBoids = FindObjectsOfType<Boid> ();
+        foreach (Boid b in allBoids)
+        {
+            if (b.boidType == type)
+            {
+                boids.Add(b);
+                b.Initialize(settings, null);
+            }  
         }
     }
 
     void Update () {
         if (boids != null) {
 
-            int numBoids = boids.Length;
+            int numBoids = boids.Count;
             var boidData = new BoidData[numBoids];
 
-            for (int i = 0; i < boids.Length; i++) {
+            for (int i = 0; i < boids.Count; i++) {
                 boidData[i].position = boids[i].position;
                 boidData[i].direction = boids[i].forward;
                 boidData[i].boidType = boids[i].boidType;
@@ -33,7 +41,7 @@ public class BoidManager : MonoBehaviour {
             boidBuffer.SetData (boidData);
 
             compute.SetBuffer (0, "boids", boidBuffer);
-            compute.SetInt ("numBoids", boids.Length);
+            compute.SetInt ("numBoids", boids.Count);
             compute.SetFloat ("viewRadius", settings.perceptionRadius);
             compute.SetFloat ("avoidRadius", settings.avoidanceRadius);
 
@@ -42,7 +50,7 @@ public class BoidManager : MonoBehaviour {
 
             boidBuffer.GetData (boidData);
 
-            for (int i = 0; i < boids.Length; i++) {
+            for (int i = 0; i < boids.Count; i++) {
                 boids[i].avgFlockHeading = boidData[i].flockHeading;
                 boids[i].centreOfFlockmates = boidData[i].flockCentre;
                 boids[i].avgAvoidanceHeading = boidData[i].avoidanceHeading;
