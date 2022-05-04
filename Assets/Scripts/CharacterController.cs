@@ -15,7 +15,7 @@ public class CharacterController : MonoBehaviour {
     public float buoyancy;
     public float movementForce;
     public float movementForceY;
-    public float mouseSensitivity;
+    public float mouseSensitivity { get; private set; } = 200;
 
     private Camera mainCamera;
     private Collider collider;
@@ -24,6 +24,7 @@ public class CharacterController : MonoBehaviour {
     public float waterHeight;
     public float gravity = 9.8f;
     private float velocity = 0;
+    private float rotationX = 0;
 
     private void Awake() {
         mainCamera = Camera.main;
@@ -46,9 +47,14 @@ public class CharacterController : MonoBehaviour {
     private void updateDirection() {
         Vector2 mouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
         Vector3 rotationY = new Vector3(0, mouseDelta.x, 0) * (Time.deltaTime * mouseSensitivity);
-        Vector3 rotationX = new Vector3(-mouseDelta.y, 0, 0) * (Time.deltaTime * mouseSensitivity);
+        
+        // x-axis rotation (applies to camera only)
+        float rotationDeltaX = -mouseDelta.y * Time.deltaTime * mouseSensitivity;
+        rotationX = Mathf.Clamp(rotationX + rotationDeltaX, -90, 90);
+        mainCamera.transform.localRotation = Quaternion.Euler(new Vector3(rotationX, 0, 0));
+        
+        // y-axis rotation (applies to player obj only)
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + rotationY);
-        mainCamera.transform.rotation = Quaternion.Euler(mainCamera.transform.rotation.eulerAngles + rotationX);
     }
 
     private void updateMovement() {
