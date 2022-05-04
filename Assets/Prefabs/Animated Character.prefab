@@ -493,12 +493,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1208f36a9f0e4bdfb6e7e2f02a9e936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterPlane: {fileID: 0}
   buoyancy: 1
-  movementForce: 5000
-  movementForceY: 3000
-  waterHeight: 497
-  gravity: 9.8
+  movementForce: 1000
+  movementForceY: 1000
 --- !u!114 &3030661119171077270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -506,7 +503,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2397254857753361967}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80c2c0b63122c429d97dc58ee023df1b, type: 3}
   m_Name: 
@@ -727,6 +724,7 @@ GameObject:
   - component: {fileID: 4942078446513666997}
   - component: {fileID: 4942078446513666999}
   - component: {fileID: 4942078446513666998}
+  - component: {fileID: 6601973499036091054}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -800,6 +798,18 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4942078446513666996}
   m_Enabled: 1
+--- !u!114 &6601973499036091054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4942078446513666996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9278649d6cbe940fea9ff44edcfa8459, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5033230689062079295
 GameObject:
   m_ObjectHideFlags: 0

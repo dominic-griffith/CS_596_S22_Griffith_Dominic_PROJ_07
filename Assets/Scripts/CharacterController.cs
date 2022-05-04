@@ -10,8 +10,7 @@ public class CharacterController : MonoBehaviour {
     private const KeyCode RIGHT_KEY = KeyCode.D;
     private const KeyCode UP_KEY = KeyCode.Space;
     private const KeyCode DOWN_KEY = KeyCode.LeftShift;
-
-    public TridentController waterPlane;
+    
     public float buoyancy;
     public float movementForce;
     public float movementForceY;
@@ -20,10 +19,8 @@ public class CharacterController : MonoBehaviour {
     private Camera mainCamera;
     private Collider collider;
     private Rigidbody rigidbody;
+    private TridentController waterPlane;
 
-    public float waterHeight;
-    public float gravity = 9.8f;
-    private float velocity = 0;
     private float rotationX = 0;
 
     //Animation Variables
@@ -34,6 +31,7 @@ public class CharacterController : MonoBehaviour {
         mainCamera = Camera.main;
         collider = GetComponent<Collider>();
         rigidbody = GetComponent<Rigidbody>();
+        waterPlane = GameObject.Find("TridentWater").GetComponent<TridentController>();
         
         Cursor.lockState = CursorLockMode.Locked;
 
@@ -94,18 +92,12 @@ public class CharacterController : MonoBehaviour {
         if (Input.GetKey(RIGHT_KEY)) rigidbody.AddForce(transform.right * (movementForce * Time.deltaTime));
 
         // note: these up/down movement commands will probably eventually be replaced with a ballast tank fill/drain that affects buoyancy
-        if (transform.position.y < waterHeight)
-        {
+        if (transform.position.y < waterPlane.getWaveHeight(transform.position)) {
             if (Input.GetKey(UP_KEY)) rigidbody.AddForce(transform.up * (movementForceY * Time.deltaTime));
             if (Input.GetKey(DOWN_KEY)) rigidbody.AddForce(-transform.up * (movementForceY * Time.deltaTime));
         }
-        else
-        {
-            velocity -= gravity * Time.deltaTime;
-            rigidbody.AddForce(new Vector3(0, velocity, 0));
-        }
 
-        
+
     }
     
     private void applyBuoyantForce() {
