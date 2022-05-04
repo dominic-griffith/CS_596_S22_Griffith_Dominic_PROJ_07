@@ -45,13 +45,26 @@ public class CharacterController : MonoBehaviour {
     private void Update() {
         updateDirection();
         updateMovement();
+        //updateModelDirection();
     }
 
     private void FixedUpdate() {
         applyBuoyantForce();
     }
 
+    private void updateModelDirection(){
+        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        move.Normalize();
+        //controller.Move(move * Time.deltaTime * 2);
 
+        // turn the character in the direction its moving (if applicable)
+        if (move != Vector3.zero) {
+                //gameObject.transform.forward = move;
+                Quaternion rotGoal = Quaternion.LookRotation(move, Vector3.up);
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, rotGoal, 750f * Time.deltaTime);
+
+        }
+    }
     private void updateDirection() {
         Vector2 mouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
         Vector3 rotationY = new Vector3(0, mouseDelta.x, 0) * (Time.deltaTime * mouseSensitivity);
@@ -66,7 +79,14 @@ public class CharacterController : MonoBehaviour {
     }
 
     private void updateMovement() {
-        //ask corey about this if i can easily just add aniamtor to set isMoving
+        //animation if statement to check if moving;
+        // if (Input.GetKey(FORWARD_KEY) ||Input.GetKey(LEFT_KEY) || Input.GetKey(RIGHT_KEY)){
+        //     animator.SetBool(isMovingHash, true);
+        // } else{
+        //     animator.SetBool(isMovingHash, false);
+
+        // }
+
         if (Input.GetKey(FORWARD_KEY)) rigidbody.AddForce(transform.forward * (movementForce * Time.deltaTime));
         if (Input.GetKey(BACKWARD_KEY)) rigidbody.AddForce(-transform.forward * (movementForce * Time.deltaTime));
         if (Input.GetKey(LEFT_KEY)) rigidbody.AddForce(-transform.right * (movementForce * Time.deltaTime));
