@@ -79,6 +79,7 @@ public class CharacterController : MonoBehaviour {
     }
 
     private void updateMovement() {
+        //probably not needed
         //animation if statement to check if moving;
         // if (Input.GetKey(FORWARD_KEY) ||Input.GetKey(LEFT_KEY) || Input.GetKey(RIGHT_KEY)){
         //     animator.SetBool(isMovingHash, true);
