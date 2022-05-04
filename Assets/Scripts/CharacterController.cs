@@ -26,12 +26,20 @@ public class CharacterController : MonoBehaviour {
     private float velocity = 0;
     private float rotationX = 0;
 
+    //Animation Variables
+    Animator animator;
+    int isMovingHash;
+
     private void Awake() {
         mainCamera = Camera.main;
         collider = GetComponent<Collider>();
         rigidbody = GetComponent<Rigidbody>();
         
         Cursor.lockState = CursorLockMode.Locked;
+
+        //Animation Variables
+        animator = GetComponent<Animator>();
+        isMovingHash = Animator.StringToHash("isMoving");
     }
 
     private void Update() {
@@ -58,6 +66,7 @@ public class CharacterController : MonoBehaviour {
     }
 
     private void updateMovement() {
+        //ask corey about this if i can easily just add aniamtor to set isMoving
         if (Input.GetKey(FORWARD_KEY)) rigidbody.AddForce(transform.forward * (movementForce * Time.deltaTime));
         if (Input.GetKey(BACKWARD_KEY)) rigidbody.AddForce(-transform.forward * (movementForce * Time.deltaTime));
         if (Input.GetKey(LEFT_KEY)) rigidbody.AddForce(-transform.right * (movementForce * Time.deltaTime));
