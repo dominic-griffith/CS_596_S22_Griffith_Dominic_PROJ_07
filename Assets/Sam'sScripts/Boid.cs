@@ -27,7 +27,7 @@ public class Boid : MonoBehaviour {
     public int numPerceivedFlockmates;
 
     // Cached
-    Material material;
+    //Material material;
     Transform cachedTransform;
     Transform target;
 
@@ -45,12 +45,6 @@ public class Boid : MonoBehaviour {
 
         float startSpeed = (settings.minSpeed + settings.maxSpeed) / 2;
         velocity = transform.forward * startSpeed;
-    }
-
-    public void SetColour (Color col) {
-        if (material != null) {
-            material.color = col;
-        }
     }
 
     public void SetType(int type)

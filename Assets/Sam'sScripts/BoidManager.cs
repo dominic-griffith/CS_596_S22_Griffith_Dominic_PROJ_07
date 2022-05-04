@@ -51,7 +51,7 @@ public class BoidManager : MonoBehaviour {
                 boids[i].UpdateBoid ();
             }
 
-            boidBuffer.Release ();
+            boidBuffer.Dispose ();
         }
     }
 
