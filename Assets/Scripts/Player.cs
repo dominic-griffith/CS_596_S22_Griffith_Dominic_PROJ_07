@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     //make list for more quest
     public Quest quest;
 
+    public QuestGiver questGiver;
     public TextMeshProUGUI goldCounter;
 
     private void Start()
@@ -28,10 +29,11 @@ public class Player : MonoBehaviour
         {
             //add if to check here to see if player is working towards active quest
             quest.goal.Collected();
-            if(quest.goal.isReached())
+            if (quest.goal.isReached())
             {
                 gold += quest.goldReward;
                 quest.Complete();
+                questGiver.questCompleted();
             }
         }
     }
