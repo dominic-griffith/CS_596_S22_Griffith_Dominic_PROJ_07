@@ -19,7 +19,12 @@ public class UnderwaterEffect : MonoBehaviour {
         bool isCameraSubmerged = posY < waveHeight;
         
         // only apply underwater shader if we are actually underwater
-        if (isCameraSubmerged) Graphics.Blit(src, dest, waterEffectMaterial);
-        else Graphics.Blit(src, dest);
+        if (isCameraSubmerged) {
+            Graphics.Blit(src, dest, waterEffectMaterial);
+            RenderSettings.fog = true;
+        } else {
+            Graphics.Blit(src, dest);
+            RenderSettings.fog = false;
+        }
     }
 }
