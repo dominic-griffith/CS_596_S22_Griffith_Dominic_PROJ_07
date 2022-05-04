@@ -17,6 +17,8 @@ public class Quest
     public string description;
     public int goldReward;
 
+    public string target;
+
     public QuestGoal goal;
 
     public void Complete()
