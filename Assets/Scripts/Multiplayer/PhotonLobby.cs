@@ -21,37 +21,47 @@ public class PhotonLobby : MonoBehaviourPunCallbacks
 
     public override void OnConnectedToMaster(){
         Debug.Log("We are now connected to: " + PhotonNetwork.CloudRegion); 
-        battleButton.SetActive(true);
-        // RoomOptions roomOptions = new RoomOptions(); //creates options for multiplayer room
-        // roomOptions.IsVisible = false;
-        // roomOptions.MaxPlayers = 4;
-        // PhotonNetwork.JoinOrCreateRoom("Salinity", roomOptions, TypedLobby.Default); //checks to see if room exists with name and joins or creates
-
+        battleButton.SetActive(true); 
     }
 
     public void OnBattleButtonClicked(){
-        PhotonNetwork.JoinRandomRoom();
         battleButton.SetActive(false);
         cancelButton.SetActive(true);
+        if (PhotonNetwork.NetworkClientState == ClientState.ConnectedToMasterServer)
+        {
+            PhotonNetwork.JoinRandomRoom();
+        }   
+        else
+        {
+            Debug.LogError("Can't join random room now, client is not ready");
+        }
+
     }
 
     //if room is not found, creates room with default room settings
     public override void OnJoinRandomFailed(short returnCode, string message){
         Debug.Log("tried to join randomGame but failed. No open games.");
-        //int randomRoomName = Random.Range(0, 10000);
         CreateRoom();
 
     }
     void CreateRoom(){
+        Debug.Log("Creating Room");
+
+        int randomRoomName = Random.Range(0, 10000);
+
         RoomOptions roomOptions = new RoomOptions();//room options
         roomOptions.IsVisible = true;
         roomOptions.MaxPlayers = 4;
         roomOptions.IsOpen = true;
-        PhotonNetwork.JoinOrCreateRoom("Salinity", roomOptions, TypedLobby.Default);
+        PhotonNetwork.CreateRoom("Room" + randomRoomName, roomOptions, TypedLobby.Default);
     }
 
+    public override void OnJoinedRoom(){
+        Debug.Log("We are now in a room");
+    }
     public override void OnCreateRoomFailed(short returnCode, string message){
         Debug.Log("tried to create a room but failed. maybe already room with same name?");
+        CreateRoom();
     }
     // Update is called once per frame
     public void OnCancelButtonClicked(){
