@@ -777,6 +777,7 @@ MonoBehaviour:
   buoyancy: 1
   movementForce: 10000
   movementForceY: 10000
+  jumpForce: 1000
 --- !u!95 &4037837298007562346
 Animator:
   serializedVersion: 4

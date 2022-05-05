@@ -14,6 +14,7 @@ public class CharacterController : MonoBehaviour {
     public float buoyancy;
     public float movementForce;
     public float movementForceY;
+    public float jumpForce;
     public float mouseSensitivity { get; private set; } = 200;
 
     private Camera mainCamera;
@@ -93,13 +94,17 @@ public class CharacterController : MonoBehaviour {
 
         // note: these up/down movement commands will probably eventually be replaced with a ballast tank fill/drain that affects buoyancy
         if (transform.position.y < waterPlane.getWaveHeight(transform.position)) {
-            if (Input.GetKey(UP_KEY)) rigidbody.AddForce(transform.up * (movementForceY * Time.deltaTime));
-            if (Input.GetKey(DOWN_KEY)) rigidbody.AddForce(-transform.up * (movementForceY * Time.deltaTime));
+            if (Input.GetKey(UP_KEY)) rigidbody.AddForce(transform.up * (movementForceY * Time.deltaTime)); // swim up
+            if (Input.GetKey(DOWN_KEY)) rigidbody.AddForce(-transform.up * (movementForceY * Time.deltaTime)); // swim down
+        } else {
+            if (Input.GetKeyDown(UP_KEY) && checkIsGrounded()) {
+                rigidbody.AddForce(transform.up * jumpForce);
+                print("JKUMP");
+            }
         }
-
-
     }
     
+    // applies force of buoyancy to player.  Only call this from FixedUpdate() otherwise it will not properly counteract gravity
     private void applyBuoyantForce() {
             float height = collider.bounds.size.y;
             float waveHeight = waterPlane.getWaveHeight(transform.position);
@@ -107,5 +112,10 @@ public class CharacterController : MonoBehaviour {
             float amountSubmerged = 1 - Mathf.Clamp01(waveOffsetTop / height);
             float localBuoyancy = buoyancy * amountSubmerged * -Physics.gravity.y * rigidbody.mass;
             rigidbody.AddForce(new Vector3(0, localBuoyancy, 0), ForceMode.Acceleration);
+    }
+    
+    // returns true if the player is on or very close to the terrain
+    private bool checkIsGrounded() {
+        return Physics.Raycast(transform.position, -Vector3.up, collider.bounds.extents.y+ 0.1f);
     }
 }
