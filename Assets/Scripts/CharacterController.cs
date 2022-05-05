@@ -65,16 +65,18 @@ public class CharacterController : MonoBehaviour {
         }
     }
     private void updateDirection() {
-        Vector2 mouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
-        Vector3 rotationY = new Vector3(0, mouseDelta.x, 0) * (Time.deltaTime * mouseSensitivity);
+        if (Cursor.lockState == CursorLockMode.Locked) { // don't rotate if the cursor isn't engaged
+            Vector2 mouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+            Vector3 rotationY = new Vector3(0, mouseDelta.x, 0) * (Time.deltaTime * mouseSensitivity);
         
-        // x-axis rotation (applies to camera only)
-        float rotationDeltaX = -mouseDelta.y * Time.deltaTime * mouseSensitivity;
-        rotationX = Mathf.Clamp(rotationX + rotationDeltaX, -90, 90);
-        mainCamera.transform.localRotation = Quaternion.Euler(new Vector3(rotationX, 0, 0));
+            // x-axis rotation (applies to camera only)
+            float rotationDeltaX = -mouseDelta.y * Time.deltaTime * mouseSensitivity;
+            rotationX = Mathf.Clamp(rotationX + rotationDeltaX, -90, 90);
+            mainCamera.transform.localRotation = Quaternion.Euler(new Vector3(rotationX, 0, 0));
         
-        // y-axis rotation (applies to player obj only)
-        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + rotationY);
+            // y-axis rotation (applies to player obj only)
+            transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + rotationY);
+        }
     }
 
     private void updateMovement() {
