@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 2201346652920294958, guid: aa66ba51bfc0042d98f06992ff55ae97, type: 3}
-  spawnRadius: 10
+  spawnRadius: 5
   spawnCount: 100
   showSpawnRegion: 2
   type: 1
