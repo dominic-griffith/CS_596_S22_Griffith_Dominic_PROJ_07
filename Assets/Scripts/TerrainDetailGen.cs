@@ -6,12 +6,12 @@ public class TerrainDetailGen : MonoBehaviour {
     private const int TEST_RES = 100;
     private const int OBJECTS_TO_PLACE = 20000;
     
-    public Transform testPrefab;
-
     private Terrain terrain;
+    private Transform[] oceanPrefabs;
 
     private void Awake() {
         terrain = GetComponent<Terrain>();
+        oceanPrefabs = Resources.LoadAll<Transform>("Prefabs/TerrainGen/Ocean");
     }
 
     private void Start() {
@@ -23,7 +23,7 @@ public class TerrainDetailGen : MonoBehaviour {
     private void placeRandomObjects() {
         for (int i = 0; i < OBJECTS_TO_PLACE; i++) {
             Vector3 relativePos = new Vector3(Random.Range(0f, 1f), 0, Random.Range(0f, 1f));
-            Transform newObj = Instantiate(testPrefab, transform);
+            Transform newObj = Instantiate(oceanPrefabs[Random.Range(0, oceanPrefabs.Length)], transform);
             placeObject(newObj, relativePos);
         }
     }
@@ -34,7 +34,7 @@ public class TerrainDetailGen : MonoBehaviour {
         for (int x = 0; x < TEST_RES; x++) {
             for (int z = 0; z < TEST_RES; z++) {
                 Vector3 relativePos = new Vector3((float) x / TEST_RES, 0, (float) z / TEST_RES);
-                Transform newObj = Instantiate(testPrefab, transform);
+                Transform newObj = Instantiate(oceanPrefabs[Random.Range(0, oceanPrefabs.Length)], transform);
                 placeObject(newObj, relativePos);
             }
         }
