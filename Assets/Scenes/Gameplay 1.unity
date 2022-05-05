@@ -21593,7 +21593,14 @@ MonoBehaviour:
   supervisors:
   - {fileID: 1595165966613336964, guid: 54bd54861b3dd4d2bb439d0fc26ea908, type: 3}
   - {fileID: -8914664898034660876, guid: 5e971ce548a954949a74d70b36f4787e, type: 3}
-  spawnDist: 500
+  - {fileID: 8388149606125630674, guid: bdcbf678762294f8382a9d63226f5728, type: 3}
+  - {fileID: 7733494119294425860, guid: 7f7a62126eb2f46f3a8c47e1c0bbfe99, type: 3}
+  - {fileID: 1601027444711690194, guid: a2c33b56280594b36b7b0e565f746053, type: 3}
+  - {fileID: 760939152840756944, guid: efb51efadb9f74e25847b4f4ee605fd7, type: 3}
+  - {fileID: 4200496703330187980, guid: 553ecdee6ec3f48a199bb84e6f8349c9, type: 3}
+  - {fileID: 1085941047743772819, guid: 4ec9a2891812941738900bb06ddb841c, type: 3}
+  - {fileID: 239301051301563619, guid: 68e2bf54b99054ae79f2f7ceecde9adb, type: 3}
+  spawnDist: 400
 --- !u!4 &1396370622
 Transform:
   m_ObjectHideFlags: 0
