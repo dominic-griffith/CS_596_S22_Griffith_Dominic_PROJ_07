@@ -67,7 +67,7 @@ public class TridentController : MonoBehaviour {
             sampleTotal += sampleChannel(i, (scaledPos + speedOffset) * scales[i]) * intensities[i];
             intensityTotal += intensities[i];
         }
-        return (sampleTotal / intensityTotal) * masterIntensity;
+        return transform.position.y + ((sampleTotal / intensityTotal) * masterIntensity);
 
         
         // get the value of a specified color channel in the wave texture at pos, a vector2 between 0 and 1

@@ -6,15 +6,27 @@ using TMPro;
 
 public class DoQuest : MonoBehaviour
 {
-    public GameObject promptWindow;
-    public Player player;
+    private GameObject promptWindow;
+    private Player player;
+
+    public string interactableObject = "Null";
 
     private bool keyPressed = false;
 
+    private void Start()
+    {
+        promptWindow = GameObject.Find("Canvas").transform.Find("Interaction Prompt").gameObject;
+    }
+
     void OnTriggerEnter(Collider other)
     {
+        if (other.tag == "Player")
+        {
+            player = other.GetComponent<Player>();
+        }
         //check if  (1) collides with player (2) has same goal type (3) is the target gameobject
-        if (other.tag == "Player" && player.quest.goal.goalType == gameObject.GetComponentInParent<InteractableObject>().goalType && player.quest.target == gameObject.transform.parent.name)
+        if (other.tag == "Player" &&  player.quest.target == interactableObject)
+        //add this for gameobjects with different quest types: player.quest.goal.goalType == gameObject.GetComponentInParent<InteractableObject>().goalType &&
         {
             promptWindow.SetActive(true);
         }
@@ -22,9 +34,14 @@ public class DoQuest : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        if (other.tag == "Player")
+        {
+            player = other.GetComponent<Player>();
+        }
         if (other.tag == "Player" & !keyPressed)
         {
-            if (Input.GetKeyDown(KeyCode.E) && player.quest.goal.goalType == gameObject.GetComponentInParent<InteractableObject>().goalType && player.quest.target == gameObject.transform.parent.name)
+            if (Input.GetKeyDown(KeyCode.E) && player.quest.target == interactableObject)
+            //same here: player.quest.goal.goalType == gameObject.GetComponentInParent<InteractableObject>().goalType &&
             {
                 player.CollectItem();
                 keyPressed = true;

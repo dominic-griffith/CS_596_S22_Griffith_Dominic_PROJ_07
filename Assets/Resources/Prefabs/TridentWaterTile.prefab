@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 56238537424244395}
   - component: {fileID: 2048203358690166362}
   - component: {fileID: 5113671120305308035}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TridentWaterTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,6 +111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaba8463ce7084fcf8a64cbc4b4d876b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  materialScale: 10
-  resolution: {x: 100, y: 100}
-  scale: {x: 30, y: 30}
+  materialScale: 20
+  resolution: {x: 200, y: 200}
+  scale: {x: 120, y: 120}
