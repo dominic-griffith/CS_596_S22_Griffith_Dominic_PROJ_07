@@ -5,9 +5,15 @@ using UnityEngine;
 public class QuestPrompt : MonoBehaviour
 {
     public QuestGiver questGiver;
+    private Player player;
 
     void OnTriggerEnter(Collider other)
     {
+        if (other.tag == "Player")
+        {
+            player = other.GetComponent<Player>();
+            questGiver.player = player;
+        }
         if (other.tag == "Player")
         {
             questGiver.OpenQuestWindow();

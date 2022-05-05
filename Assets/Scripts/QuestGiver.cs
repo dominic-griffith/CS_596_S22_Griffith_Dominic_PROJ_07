@@ -8,6 +8,7 @@ public class QuestGiver : MonoBehaviour
 {
     public List<Quest> quest;
 
+    [System.NonSerialized]
     public Player player;
 
     public GameObject questWindow;
