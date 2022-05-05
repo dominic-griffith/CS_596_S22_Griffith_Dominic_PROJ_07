@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 56238537424244395}
   - component: {fileID: 2048203358690166362}
   - component: {fileID: 5113671120305308035}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TridentWaterTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
