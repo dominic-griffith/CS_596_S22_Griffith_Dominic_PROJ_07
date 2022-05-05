@@ -7,15 +7,27 @@ public class TerrainDetailGen : MonoBehaviour {
     private const int OBJECTS_TO_PLACE = 20000;
     
     private Terrain terrain;
+    private TridentController tridentWater;
     private Transform[] oceanPrefabs;
+
+    private float relativeWaterLevel;
 
     private void Awake() {
         terrain = GetComponent<Terrain>();
+        tridentWater = GameObject.Find("TridentWater").GetComponent<TridentController>();
         oceanPrefabs = Resources.LoadAll<Transform>("Prefabs/TerrainGen/Ocean");
+
+        relativeWaterLevel = getRelativeWaterLevel();
     }
 
     private void Start() {
         placeRandomObjects();
+    }
+
+
+    private float getRelativeWaterLevel() {
+        Vector3 terrainSize = terrain.terrainData.size;
+        return (tridentWater.transform.position.y - transform.position.y) / terrainSize.y;
     }
     
     
@@ -23,8 +35,7 @@ public class TerrainDetailGen : MonoBehaviour {
     private void placeRandomObjects() {
         for (int i = 0; i < OBJECTS_TO_PLACE; i++) {
             Vector3 relativePos = new Vector3(Random.Range(0f, 1f), 0, Random.Range(0f, 1f));
-            Transform newObj = Instantiate(oceanPrefabs[Random.Range(0, oceanPrefabs.Length)], transform);
-            placeObject(newObj, relativePos);
+            createAndPlaceObject(oceanPrefabs[Random.Range(0, oceanPrefabs.Length)], relativePos, 0, relativeWaterLevel);
         }
     }
     
@@ -34,20 +45,24 @@ public class TerrainDetailGen : MonoBehaviour {
         for (int x = 0; x < TEST_RES; x++) {
             for (int z = 0; z < TEST_RES; z++) {
                 Vector3 relativePos = new Vector3((float) x / TEST_RES, 0, (float) z / TEST_RES);
-                Transform newObj = Instantiate(oceanPrefabs[Random.Range(0, oceanPrefabs.Length)], transform);
-                placeObject(newObj, relativePos);
+                createAndPlaceObject(oceanPrefabs[Random.Range(0, oceanPrefabs.Length)], relativePos);
             }
         }
     }
 
 
     // places an object on the terrain (relative pos is scaled from 0 to 1)
-    private void placeObject(Transform obj, Vector3 relativePos) {
+    private void createAndPlaceObject(Transform objPrefab, Vector3 relativePos, float minHeight = 0f, float maxHeight = 1f) {
         Vector3 terrainSize = terrain.terrainData.size;
         float resolution = terrain.terrainData.heightmapResolution;
         
-        Vector3 objPos = terrain.transform.position + new Vector3(relativePos.x * terrainSize.x, 0, relativePos.z * terrainSize.z);
-        objPos.y = terrain.terrainData.GetHeight(Mathf.FloorToInt(relativePos.x * resolution), Mathf.FloorToInt(relativePos.z * resolution));
-        obj.transform.position = objPos;
+        float terrainHeight = terrain.terrainData.GetHeight(Mathf.FloorToInt(relativePos.x * resolution), Mathf.FloorToInt(relativePos.z * resolution));
+        float relativeTerrainHeight = terrainHeight / terrainSize.y;
+        if (relativeTerrainHeight >= minHeight && relativeTerrainHeight <= maxHeight) {
+            Vector3 objPos = terrain.transform.position + new Vector3(relativePos.x * terrainSize.x, 0, relativePos.z * terrainSize.z);
+            objPos.y = terrainHeight;
+            Transform obj = Instantiate(objPrefab, transform);
+            obj.transform.position = objPos;
+        }
     }
 }
