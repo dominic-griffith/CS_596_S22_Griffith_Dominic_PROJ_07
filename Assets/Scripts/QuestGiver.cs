@@ -8,6 +8,7 @@ public class QuestGiver : MonoBehaviour
 {
     public List<Quest> quest;
 
+    [System.NonSerialized]
     public Player player;
 
     public GameObject questWindow;
@@ -18,6 +19,11 @@ public class QuestGiver : MonoBehaviour
 
     private int numberQuestCompleted = 0;
 
+
+    private void Update()
+    {
+        quest[numberQuestCompleted].isUnlocked = true;
+    }
 
     public void OpenQuestWindow()
     {
