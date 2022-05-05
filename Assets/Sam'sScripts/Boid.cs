@@ -5,6 +5,7 @@ using UnityEngine;
 public class Boid : MonoBehaviour {
 
     BoidSettings settings;
+    private TridentController tridentWater;
 
     // State
     [HideInInspector]
@@ -34,6 +35,7 @@ public class Boid : MonoBehaviour {
     void Awake () {
         //material = transform.GetComponentInChildren<MeshRenderer> ().material;
         cachedTransform = transform;
+        tridentWater = GameObject.Find("TridentWater").GetComponent<TridentController>();
     }
 
     private void Start()
@@ -96,6 +98,9 @@ public class Boid : MonoBehaviour {
         cachedTransform.forward = dir;
         position = cachedTransform.position;
         forward = dir;
+        
+        
+        if (transform.position.y > tridentWater.getWaveHeight(transform.position)) gameObject.SetActive(false);
     }
 
     bool IsHeadingForCollision () {

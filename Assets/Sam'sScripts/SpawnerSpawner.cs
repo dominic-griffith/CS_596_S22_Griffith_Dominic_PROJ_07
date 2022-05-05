@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnerSpawner : MonoBehaviour
-{
+public class SpawnerSpawner : MonoBehaviour {
+    private const float SPAWN_MARGIN = 6;
+    
     public List<BoidSupervisor> supervisors;
     public int spawnDist = 50;
 
@@ -53,11 +54,7 @@ public class SpawnerSpawner : MonoBehaviour
                 if (waterHeight - terrainHeight > 14)
                 {
                     Debug.Log("WE MADE IT!");
-                    pos.y = Random.Range(terrainHeight + 5, waterHeight - 5);
-                    while (pos.y > water.getWaveHeight(pos) - 5)
-                    {
-                        pos.y = Random.Range(terrainHeight + 5, waterHeight - 5);
-                    }
+                    pos.y = Random.Range(terrainHeight + SPAWN_MARGIN, waterHeight - SPAWN_MARGIN);
                     foundValid = true;
                     count = 75;
                 }
