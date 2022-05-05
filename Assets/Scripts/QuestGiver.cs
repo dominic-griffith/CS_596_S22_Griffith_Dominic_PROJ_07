@@ -20,6 +20,11 @@ public class QuestGiver : MonoBehaviour
     private int numberQuestCompleted = 0;
 
 
+    private void Update()
+    {
+        quest[numberQuestCompleted].isUnlocked = true;
+    }
+
     public void OpenQuestWindow()
     {
         if (numberQuestCompleted < quest.Count)
