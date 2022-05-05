@@ -5267,74 +5267,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 23c449ab554d14637a0447c5fe374f97, type: 3}
   m_PrefabInstance: {fileID: 83733749}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &282413565
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 282413566}
-  - component: {fileID: 282413568}
-  - component: {fileID: 282413567}
-  - component: {fileID: 282413569}
-  m_Layer: 0
-  m_Name: Quest Zone
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &282413566
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 282413565}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 7, y: 7, z: 7}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1880960300}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &282413567
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 282413565}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &282413568
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 282413565}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &282413569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 282413565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76972dfce13ed4cd89737a0e8f7356e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questGiver: {fileID: 1880960296}
 --- !u!4 &288132302 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3e896151a170446debed028bbb49706b, type: 3}
@@ -27930,193 +27862,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
   m_PrefabInstance: {fileID: 614198652}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1880960295
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1880960300}
-  - component: {fileID: 1880960299}
-  - component: {fileID: 1880960297}
-  - component: {fileID: 1880960296}
-  m_Layer: 0
-  m_Name: Quest Giver
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1880960296
+--- !u!114 &1880960296 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3295348603806874487, guid: f586d708a7e1c45bab109adff95de8c1, type: 3}
+  m_PrefabInstance: {fileID: 3295348601926047327}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1880960295}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56e0b6bf71f244f9d88f47656b913cf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quest:
-  - title: Hard as a Rock
-    description: Collect 6 rocks
-    goldReward: 60
-    target: Rock
-    goal:
-      goalType: 1
-      requiredAmount: 6
-      currentAmount: 0
-  - title: Finding Dory
-    description: Find a Blue Tang Fish
-    goldReward: 2000
-    target: Blue Tang Fish
-    goal:
-      goalType: 0
-      requiredAmount: 1
-      currentAmount: 0
-  - title: X Marks the Spot
-    description: Find a Goldfish
-    goldReward: 1000
-    target: Goldfish
-    goal:
-      goalType: 0
-      requiredAmount: 1
-      currentAmount: 0
-  - title: Silver and Yellow
-    description: Find a Butterflyfish
-    goldReward: 1000
-    target: Butterflyfish
-    goal:
-      goalType: 0
-      requiredAmount: 1
-      currentAmount: 0
-  - title: Flowers of the Sea
-    description: Collect 3 Blue Flowers
-    goldReward: 300
-    target: Blue Flower
-    goal:
-      goalType: 1
-      requiredAmount: 3
-      currentAmount: 0
-  - title: Finding Nemo
-    description: Find a Clownfish
-    goldReward: 1000
-    target: Clownfish
-    goal:
-      goalType: 0
-      requiredAmount: 1
-      currentAmount: 0
-  - title: From Banggai Islands
-    description: Find a Cardinalfish
-    goldReward: 1000
-    target: Cardinalfish
-    goal:
-      goalType: 0
-      requiredAmount: 1
-      currentAmount: 0
-  - title: Reefs Beneath
-    description: Collect from 2 different patches of Pink Coral
-    goldReward: 200
-    target: Pink Coral
-    goal:
-      goalType: 1
-      requiredAmount: 2
-      currentAmount: 0
-  - title: The Coral Cod
-    description: Find a Coral Grouper Fish
-    goldReward: 1000
-    target: Coral Grouper Fish
-    goal:
-      goalType: 0
-      requiredAmount: 1
-      currentAmount: 0
-  - title: Mooooooo
-    description: Find a Cowfish
-    goldReward: 1000
-    target: Cowfish
-    goal:
-      goalType: 0
-      requiredAmount: 1
-      currentAmount: 0
-  - title: Where Grass Grows
-    description: Collect from 5 different Green Sea Grass locations
-    goldReward: 500
-    target: Green Sea Grass
-    goal:
-      goalType: 1
-      requiredAmount: 5
-      currentAmount: 0
-  - title: Teeth like a beak
-    description: Find a Parrotfish
-    goldReward: 1000
-    target: Parrotfish
-    goal:
-      goalType: 0
-      requiredAmount: 1
-      currentAmount: 0
-  - title: Jaws
-    description: Find a Shark
-    goldReward: 1000
-    target: Shark
-    goal:
-      goalType: 0
-      requiredAmount: 1
-      currentAmount: 0
-  - title: Large Sea Fish
-    description: Find a Whale
-    goldReward: 1000
-    target: Whale
-    goal:
-      goalType: 0
-      requiredAmount: 1
-      currentAmount: 0
-  questWindow: {fileID: 434583486}
-  titleText: {fileID: 323283574}
-  descriptionText: {fileID: 178887191}
-  goldText: {fileID: 1364946516}
---- !u!136 &1880960297
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1880960295}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.831379
-  m_Height: 5.82016
-  m_Direction: 1
-  m_Center: {x: 0.000000007827876, y: 1.91008, z: 0.19795127}
---- !u!33 &1880960299
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1880960295}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1880960300
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1880960295}
-  m_LocalRotation: {x: -0, y: -0.25065973, z: -0, w: 0.96807534}
-  m_LocalPosition: {x: 2758.75, y: 498, z: 2443.32}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 282413566}
-  - {fileID: 2141087313}
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: -29.033, z: 0}
 --- !u!4 &1887390151 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
@@ -31742,68 +31498,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f0a12a191b0954dc49442f8e5224d0d7, type: 3}
   m_PrefabInstance: {fileID: 531798245}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &2141087312
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1880960300}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 772589a833e6b474b894f518c8cd33a3, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 772589a833e6b474b894f518c8cd33a3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 772589a833e6b474b894f518c8cd33a3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 772589a833e6b474b894f518c8cd33a3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 772589a833e6b474b894f518c8cd33a3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 772589a833e6b474b894f518c8cd33a3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 772589a833e6b474b894f518c8cd33a3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 772589a833e6b474b894f518c8cd33a3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 772589a833e6b474b894f518c8cd33a3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 772589a833e6b474b894f518c8cd33a3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 772589a833e6b474b894f518c8cd33a3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 772589a833e6b474b894f518c8cd33a3, type: 3}
-      propertyPath: m_Name
-      value: Male_Casual
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 772589a833e6b474b894f518c8cd33a3, type: 3}
---- !u!4 &2141087313 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 772589a833e6b474b894f518c8cd33a3, type: 3}
-  m_PrefabInstance: {fileID: 2141087312}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2142985120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32044,3 +31738,76 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+--- !u!1001 &3295348601926047327
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3295348603806874483, guid: f586d708a7e1c45bab109adff95de8c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3295348603806874483, guid: f586d708a7e1c45bab109adff95de8c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2758.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3295348603806874483, guid: f586d708a7e1c45bab109adff95de8c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 498
+      objectReference: {fileID: 0}
+    - target: {fileID: 3295348603806874483, guid: f586d708a7e1c45bab109adff95de8c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2443.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 3295348603806874483, guid: f586d708a7e1c45bab109adff95de8c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.96807534
+      objectReference: {fileID: 0}
+    - target: {fileID: 3295348603806874483, guid: f586d708a7e1c45bab109adff95de8c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3295348603806874483, guid: f586d708a7e1c45bab109adff95de8c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.25065973
+      objectReference: {fileID: 0}
+    - target: {fileID: 3295348603806874483, guid: f586d708a7e1c45bab109adff95de8c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3295348603806874483, guid: f586d708a7e1c45bab109adff95de8c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3295348603806874483, guid: f586d708a7e1c45bab109adff95de8c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -29.033
+      objectReference: {fileID: 0}
+    - target: {fileID: 3295348603806874483, guid: f586d708a7e1c45bab109adff95de8c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3295348603806874487, guid: f586d708a7e1c45bab109adff95de8c1, type: 3}
+      propertyPath: goldText
+      value: 
+      objectReference: {fileID: 1364946516}
+    - target: {fileID: 3295348603806874487, guid: f586d708a7e1c45bab109adff95de8c1, type: 3}
+      propertyPath: titleText
+      value: 
+      objectReference: {fileID: 323283574}
+    - target: {fileID: 3295348603806874487, guid: f586d708a7e1c45bab109adff95de8c1, type: 3}
+      propertyPath: questWindow
+      value: 
+      objectReference: {fileID: 434583486}
+    - target: {fileID: 3295348603806874487, guid: f586d708a7e1c45bab109adff95de8c1, type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 178887191}
+    - target: {fileID: 3295348603806874488, guid: f586d708a7e1c45bab109adff95de8c1, type: 3}
+      propertyPath: m_Name
+      value: Quest Giver
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f586d708a7e1c45bab109adff95de8c1, type: 3}
