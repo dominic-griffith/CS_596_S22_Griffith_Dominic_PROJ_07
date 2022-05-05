@@ -15,8 +15,9 @@ public class UnderwaterEffect : MonoBehaviour {
     private void OnRenderImage(RenderTexture src, RenderTexture dest) {
         // check if camera is underwater
         float posY = transform.position.y;
-        float waveHeight = waterPlane.getWaveHeight(transform.position) + waterPlane.transform.position.y;
+        float waveHeight = waterPlane.getWaveHeight(transform.position);
         bool isCameraSubmerged = posY < waveHeight;
+        print("> " + isCameraSubmerged);
         
         // only apply underwater shader if we are actually underwater
         if (isCameraSubmerged) {
