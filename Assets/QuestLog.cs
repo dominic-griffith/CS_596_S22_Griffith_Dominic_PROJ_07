@@ -37,7 +37,7 @@ public class QuestLog : MonoBehaviour
             }
             else if(questGiver.quest[i].isActive)
             {
-                questInfo.text += questGiver.quest[i].title + "..........Active\n";
+                questInfo.text += questGiver.quest[i].title + "..........Active" + "        (" + questGiver.quest[i].goal.currentAmount + "/" + questGiver.quest[i].goal.requiredAmount + ")\n";
             }
             else if(questGiver.quest[i].isUnlocked)
             {
