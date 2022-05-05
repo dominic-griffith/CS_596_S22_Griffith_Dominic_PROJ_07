@@ -21668,7 +21668,7 @@ MonoBehaviour:
   - {fileID: 4200496703330187980, guid: 553ecdee6ec3f48a199bb84e6f8349c9, type: 3}
   - {fileID: 1085941047743772819, guid: 4ec9a2891812941738900bb06ddb841c, type: 3}
   - {fileID: 239301051301563619, guid: 68e2bf54b99054ae79f2f7ceecde9adb, type: 3}
-  spawnDist: 500
+  spawnDist: 400
 --- !u!4 &1396370622
 Transform:
   m_ObjectHideFlags: 0

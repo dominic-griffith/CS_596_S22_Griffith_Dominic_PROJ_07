@@ -36,6 +36,11 @@ public class Boid : MonoBehaviour {
         cachedTransform = transform;
     }
 
+    private void Start()
+    {
+        target = GameObject.Find("Player").transform;
+    }
+
     public void Initialize (BoidSettings settings, Transform target) {
         this.target = target;
         this.settings = settings;
