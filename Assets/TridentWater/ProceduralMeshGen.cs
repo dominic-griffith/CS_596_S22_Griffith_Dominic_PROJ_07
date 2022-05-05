@@ -1,27 +1,50 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
+[ExecuteInEditMode]
 public class ProceduralMeshGen : MonoBehaviour {
+    private const string MESH_SAVE_FILEPATH = "TridentWater/Mesh";
+    
     public float materialScale = 10f;
 
     public Vector2Int resolution; // the number of vertices in each direction
     public Vector2 scale; // the scale of the mesh
 
+    public bool generate = false;
+
     private MeshFilter meshFilter;
     private MeshCollider meshCollider;
-    private Mesh mesh;
 
     private void Awake() {
         meshFilter = gameObject.GetComponent<MeshFilter>();
         meshCollider = gameObject.GetComponent<MeshCollider>();
     }
-    
-    
-    
 
-    // generates the mesh and attaches it to the gameObject
-    public void generateMesh() {
+    private void Update() {
+        if (generate) {
+            generate = false;
+            saveMesh();
+            print("Mesh saved successfully.");
+        }
+    }
+
+
+    public void loadMesh() {
+        Mesh mesh = Resources.Load<Mesh>(MESH_SAVE_FILEPATH);
+        applyMesh(mesh);
+    }
+
+    // applies the mesh and attaches it to the gameObject
+    private void applyMesh(Mesh mesh) {
+        meshFilter.sharedMesh = mesh;
+        meshCollider.sharedMesh = mesh;
+    }
+
+
+    private Mesh generateMesh() {
         Vector3[] vertices = new Vector3[(resolution.x + 1) * (resolution.y + 1)];
         Vector2[] uv = new Vector2[(resolution.x + 1) * (resolution.y + 1)];
         int[] triangles = new int[resolution.x * resolution.y * 6];
@@ -48,13 +71,15 @@ public class ProceduralMeshGen : MonoBehaviour {
         }
         
         // setup mesh
-        mesh = new Mesh();
+        Mesh mesh = new Mesh();
         mesh.vertices = vertices;
         mesh.uv = uv;
         mesh.triangles = triangles;
-        
-        // apply mesh
-        meshFilter.sharedMesh = mesh;
-        meshCollider.sharedMesh = mesh;
+        return mesh;
+    }
+
+    private void saveMesh() {
+        Mesh mesh = generateMesh();
+        AssetDatabase.CreateAsset(mesh, "Assets/Resources/" + MESH_SAVE_FILEPATH + ".asset");
     }
 }

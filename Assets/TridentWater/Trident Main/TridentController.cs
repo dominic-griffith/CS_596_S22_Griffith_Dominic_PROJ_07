@@ -32,7 +32,7 @@ public class TridentController : MonoBehaviour {
             for (int z = 0; z < tileCount.y; z++) {
                 Transform newTile = Instantiate(tilePrefab, transform);
                 newTile.transform.localPosition = new Vector3(x * meshGen.scale.x, 0, z * meshGen.scale.y);
-                newTile.GetComponent<ProceduralMeshGen>().generateMesh();
+                newTile.GetComponent<ProceduralMeshGen>().loadMesh();
             }
         }
     }
