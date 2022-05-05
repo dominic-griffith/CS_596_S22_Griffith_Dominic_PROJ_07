@@ -46,13 +46,14 @@ public class SpawnerSpawner : MonoBehaviour
                 waterHeight = water.getWaveHeight(pos);
                 Debug.Log("water hiiit" + waterHeight);
                 terryRelPos = ((pos - terry.transform.position) / terry.terrainData.size.x) * terry.terrainData.heightmapResolution;
-                terrainHeight = terry.terrainData.GetHeight((int)terryRelPos.x, (int)terryRelPos.z) * terry.terrainData.size.y;
+                terrainHeight = terry.terrainData.GetHeight((int)terryRelPos.x, (int)terryRelPos.z);
                 Debug.Log("terry is COREY" + terrainHeight);
 
                 //check if we are in the water and there is enougph space for a spawner
-                if (waterHeight - terrainHeight > 7)
+                if (waterHeight - terrainHeight > 10)
                 {
-                    pos.y = Random.Range(terrainHeight , waterHeight);
+                    Debug.Log("WE MADE IT!");
+                    pos.y = Random.Range(terrainHeight + 4, waterHeight - 4);
                     foundValid = true;
                     count = 16;
                 }
