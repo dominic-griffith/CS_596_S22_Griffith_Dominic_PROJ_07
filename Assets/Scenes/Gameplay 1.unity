@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 85b102caf2a5e0a4f8f9e38b3acc2b7d, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.60316896, g: 0.8107622, b: 0.9456609, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -888,7 +888,7 @@ Transform:
   - {fileID: 1636835678}
   - {fileID: 1471044184}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &50574663
 PrefabInstance:
@@ -21097,7 +21097,7 @@ Transform:
   - {fileID: 1837167656}
   - {fileID: 1276484592}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1357992752 stripped
 Transform:
@@ -21675,7 +21675,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1401583245 stripped
 Transform:
@@ -24686,7 +24686,6 @@ RectTransform:
   - {fileID: 887461733}
   - {fileID: 2081142886}
   - {fileID: 327441068}
-  - {fileID: 1880960300}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26964,7 +26963,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4037837298007563156, guid: da6e7dfeaf1e641819165bfc580b3e77, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4037837298007563156, guid: da6e7dfeaf1e641819165bfc580b3e77, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28152,13 +28151,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880960295}
   m_LocalRotation: {x: -0, y: 0.85359716, z: -0, w: 0.52093375}
-  m_LocalPosition: {x: 1797.7, y: -40.839996, z: 2446.4}
+  m_LocalPosition: {x: 2757.7, y: 499.16, z: 2446.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 282413566}
-  m_Father: {fileID: 1648981766}
-  m_RootOrder: 6
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 117.21, z: 0}
 --- !u!4 &1887390151 stripped
 Transform:
@@ -28432,7 +28431,7 @@ Transform:
   - {fileID: 69548962}
   - {fileID: 1109474147}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1895440851
 PrefabInstance:

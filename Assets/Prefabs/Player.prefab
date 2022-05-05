@@ -651,6 +651,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9278649d6cbe940fea9ff44edcfa8459, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skyboxAboveWater: {fileID: 2100000, guid: 85b102caf2a5e0a4f8f9e38b3acc2b7d, type: 2}
+  skyboxBelowWater: {fileID: 2100000, guid: bee1deabb2cca4c8ca537febf346c454, type: 2}
 --- !u!1 &4037837298007563153
 GameObject:
   m_ObjectHideFlags: 0

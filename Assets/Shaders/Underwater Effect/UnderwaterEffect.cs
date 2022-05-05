@@ -6,6 +6,9 @@ using UnityEngine;
 public class UnderwaterEffect : MonoBehaviour {
     private Material waterEffectMaterial;
     private TridentController waterPlane;
+    
+    public Material skyboxAboveWater;
+    public Material skyboxBelowWater;
 
     private void OnEnable() {
         waterEffectMaterial = Resources.Load<Material>("UnderwaterEffect");
@@ -22,9 +25,11 @@ public class UnderwaterEffect : MonoBehaviour {
         if (isCameraSubmerged) {
             Graphics.Blit(src, dest, waterEffectMaterial);
             RenderSettings.fog = true;
+            RenderSettings.skybox = skyboxBelowWater;
         } else {
             Graphics.Blit(src, dest);
             RenderSettings.fog = false;
+            RenderSettings.skybox = skyboxAboveWater;
         }
     }
 }
