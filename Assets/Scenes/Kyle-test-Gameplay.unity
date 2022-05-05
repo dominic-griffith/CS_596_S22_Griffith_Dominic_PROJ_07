@@ -1528,6 +1528,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4422633111661676669, guid: 1ef30485ffee6458cad3f5f1867bef54, type: 3}
   m_PrefabInstance: {fileID: 3874874671550339125}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1343668284
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8739495904762816999, guid: c00ed493ccbde4cdb9be3b0300aa206f, type: 3}
+      propertyPath: m_Name
+      value: Ocean Plant Patch Large (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949674035614800013, guid: c00ed493ccbde4cdb9be3b0300aa206f, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949674035614800013, guid: c00ed493ccbde4cdb9be3b0300aa206f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2761.4844
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949674035614800013, guid: c00ed493ccbde4cdb9be3b0300aa206f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 537.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949674035614800013, guid: c00ed493ccbde4cdb9be3b0300aa206f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2453.576
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949674035614800013, guid: c00ed493ccbde4cdb9be3b0300aa206f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949674035614800013, guid: c00ed493ccbde4cdb9be3b0300aa206f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949674035614800013, guid: c00ed493ccbde4cdb9be3b0300aa206f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949674035614800013, guid: c00ed493ccbde4cdb9be3b0300aa206f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949674035614800013, guid: c00ed493ccbde4cdb9be3b0300aa206f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949674035614800013, guid: c00ed493ccbde4cdb9be3b0300aa206f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8949674035614800013, guid: c00ed493ccbde4cdb9be3b0300aa206f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c00ed493ccbde4cdb9be3b0300aa206f, type: 3}
 --- !u!1 &1364946515
 GameObject:
   m_ObjectHideFlags: 0
@@ -4161,6 +4218,63 @@ PrefabInstance:
       objectReference: {fileID: 1125712842}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c08ae0bd413c40f39db69d3c6fb32f9, type: 3}
+--- !u!1001 &5248532602259614715
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3132864073921447911, guid: 499f6c458fcb2498ba3dc6eb9d48ca74, type: 3}
+      propertyPath: m_Name
+      value: Ocean Blue Flovver big patch LOWERED
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349633892444727121, guid: 499f6c458fcb2498ba3dc6eb9d48ca74, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349633892444727121, guid: 499f6c458fcb2498ba3dc6eb9d48ca74, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2759.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349633892444727121, guid: 499f6c458fcb2498ba3dc6eb9d48ca74, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 504.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349633892444727121, guid: 499f6c458fcb2498ba3dc6eb9d48ca74, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2446.5862
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349633892444727121, guid: 499f6c458fcb2498ba3dc6eb9d48ca74, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349633892444727121, guid: 499f6c458fcb2498ba3dc6eb9d48ca74, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349633892444727121, guid: 499f6c458fcb2498ba3dc6eb9d48ca74, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349633892444727121, guid: 499f6c458fcb2498ba3dc6eb9d48ca74, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349633892444727121, guid: 499f6c458fcb2498ba3dc6eb9d48ca74, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349633892444727121, guid: 499f6c458fcb2498ba3dc6eb9d48ca74, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8349633892444727121, guid: 499f6c458fcb2498ba3dc6eb9d48ca74, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 499f6c458fcb2498ba3dc6eb9d48ca74, type: 3}
 --- !u!1 &5641094649318579740
 GameObject:
   m_ObjectHideFlags: 0
