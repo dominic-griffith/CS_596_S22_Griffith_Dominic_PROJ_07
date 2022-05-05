@@ -17471,7 +17471,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125712839}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2644, y: 495.1, z: 2237}
+  m_LocalPosition: {x: 0, y: 495, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17491,12 +17491,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePrefab: {fileID: 8139864729769385089, guid: 0c4959e02b54546798288389fc53ebd1, type: 3}
-  tileCount: {x: 20, y: 20}
+  tileCount: {x: 40, y: 40}
   speeds: {x: 1, y: -1, z: 0.5, w: 0.25}
   scales: {x: 1, y: 3, z: 10, w: 0}
   perlinNoiseScale: 0.2
-  masterIntensity: 2
-  intensities: {x: 1.5, y: 0.4, z: 0.2, w: 0}
+  masterIntensity: 5
+  intensities: {x: 3, y: 0.4, z: 0.2, w: 0}
   perlinNoiseIntensity: 1
 --- !u!4 &1127264589 stripped
 Transform:
@@ -22608,6 +22608,7 @@ GameObject:
   - component: {fileID: 1472597885}
   - component: {fileID: 1472597884}
   - component: {fileID: 1472597888}
+  - component: {fileID: 1472597889}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -22711,6 +22712,18 @@ MonoBehaviour:
     startingHeight: 0
   - textureIndex: 1
     startingHeight: 500
+--- !u!114 &1472597889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472597883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f1bacb11851f4008aaaafa8789d0cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1474274984
 PrefabInstance:
   m_ObjectHideFlags: 0
