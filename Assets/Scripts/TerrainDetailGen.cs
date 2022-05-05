@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class TerrainDetailGen : MonoBehaviour {
     private const int TEST_RES = 100;
-    private const int OBJECTS_TO_PLACE = 20000;
-    
+
+    public bool doRandomGen = true;
+    public int objectsToPlace = 20000;
+
     private Terrain terrain;
     private TridentController tridentWater;
     private Transform[] oceanPrefabs;
@@ -21,7 +23,7 @@ public class TerrainDetailGen : MonoBehaviour {
     }
 
     private void Start() {
-        placeRandomObjects();
+        if (doRandomGen) placeRandomObjects();
     }
 
 
@@ -33,7 +35,7 @@ public class TerrainDetailGen : MonoBehaviour {
     
     // places random objects
     private void placeRandomObjects() {
-        for (int i = 0; i < OBJECTS_TO_PLACE; i++) {
+        for (int i = 0; i < objectsToPlace; i++) {
             Vector3 relativePos = new Vector3(Random.Range(0f, 1f), 0, Random.Range(0f, 1f));
             createAndPlaceObject(oceanPrefabs[Random.Range(0, oceanPrefabs.Length)], relativePos, 0, relativeWaterLevel);
         }

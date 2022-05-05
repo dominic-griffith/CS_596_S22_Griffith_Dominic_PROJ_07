@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -888,7 +888,7 @@ Transform:
   - {fileID: 1636835678}
   - {fileID: 1471044184}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &50574663
 PrefabInstance:
@@ -5914,6 +5914,11 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!224 &327441068 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+  m_PrefabInstance: {fileID: 1025193543497706194}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &330627439 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 23c449ab554d14637a0447c5fe374f97, type: 3}
@@ -21092,7 +21097,7 @@ Transform:
   - {fileID: 1837167656}
   - {fileID: 1276484592}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1357992752 stripped
 Transform:
@@ -21670,7 +21675,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1401583245 stripped
 Transform:
@@ -22772,6 +22777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f1bacb11851f4008aaaafa8789d0cde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doRandomGen: 1
+  objectsToPlace: 20000
 --- !u!1001 &1474274984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24678,6 +24685,8 @@ RectTransform:
   - {fileID: 434583487}
   - {fileID: 887461733}
   - {fileID: 2081142886}
+  - {fileID: 327441068}
+  - {fileID: 1880960300}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26955,7 +26964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4037837298007563156, guid: da6e7dfeaf1e641819165bfc580b3e77, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4037837298007563156, guid: da6e7dfeaf1e641819165bfc580b3e77, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27955,18 +27964,114 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quest:
-  - title: Rocks
+  - title: Hard as a Rock
     description: Collect 6 rocks
-    goldReward: 110
+    goldReward: 60
     target: Rock
     goal:
       goalType: 1
       requiredAmount: 6
       currentAmount: 0
-  - title: Clown Fish
-    description: Find a clown fish
-    goldReward: 400
-    target: Clown Fish
+  - title: Finding Dory
+    description: Find a Blue Tang Fish
+    goldReward: 2000
+    target: Blue Tang Fish
+    goal:
+      goalType: 0
+      requiredAmount: 1
+      currentAmount: 0
+  - title: X Marks the Spot
+    description: Find a Goldfish
+    goldReward: 1000
+    target: Goldfish
+    goal:
+      goalType: 0
+      requiredAmount: 1
+      currentAmount: 0
+  - title: Silver and Yellow
+    description: Find a Butterflyfish
+    goldReward: 1000
+    target: Butterflyfish
+    goal:
+      goalType: 0
+      requiredAmount: 1
+      currentAmount: 0
+  - title: Flowers of the Sea
+    description: Collect 3 Blue Flowers
+    goldReward: 300
+    target: Blue Flower
+    goal:
+      goalType: 1
+      requiredAmount: 3
+      currentAmount: 0
+  - title: Finding Nemo
+    description: Find a Clownfish
+    goldReward: 1000
+    target: Clownfish
+    goal:
+      goalType: 0
+      requiredAmount: 1
+      currentAmount: 0
+  - title: From Banggai Islands
+    description: Find a Cardinalfish
+    goldReward: 1000
+    target: Cardinalfish
+    goal:
+      goalType: 0
+      requiredAmount: 1
+      currentAmount: 0
+  - title: Reefs Beneath
+    description: Collect from 2 different patches of Pink Coral
+    goldReward: 200
+    target: Pink Coral
+    goal:
+      goalType: 1
+      requiredAmount: 2
+      currentAmount: 0
+  - title: The Coral Cod
+    description: Find a Coral Grouper Fish
+    goldReward: 1000
+    target: Coral Grouper Fish
+    goal:
+      goalType: 0
+      requiredAmount: 1
+      currentAmount: 0
+  - title: Mooooooo
+    description: Find a Cowfish
+    goldReward: 1000
+    target: Cowfish
+    goal:
+      goalType: 0
+      requiredAmount: 1
+      currentAmount: 0
+  - title: Where Grass Grows
+    description: Collect from 5 different Green Sea Grass locations
+    goldReward: 500
+    target: Green Sea Grass
+    goal:
+      goalType: 1
+      requiredAmount: 5
+      currentAmount: 0
+  - title: Teeth like a beak
+    description: Find a Parrotfish
+    goldReward: 1000
+    target: Parrotfish
+    goal:
+      goalType: 0
+      requiredAmount: 1
+      currentAmount: 0
+  - title: Jaws
+    description: Find a Shark
+    goldReward: 1000
+    target: Shark
+    goal:
+      goalType: 0
+      requiredAmount: 1
+      currentAmount: 0
+  - title: Large Sea Fish
+    description: Find a Whale
+    goldReward: 1000
+    target: Whale
     goal:
       goalType: 0
       requiredAmount: 1
@@ -28047,13 +28152,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1880960295}
   m_LocalRotation: {x: -0, y: 0.85359716, z: -0, w: 0.52093375}
-  m_LocalPosition: {x: 2757.7, y: 499.16, z: 2446.4}
+  m_LocalPosition: {x: 1797.7, y: -40.839996, z: 2446.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 282413566}
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 1648981766}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 117.21, z: 0}
 --- !u!4 &1887390151 stripped
 Transform:
@@ -28327,7 +28432,7 @@ Transform:
   - {fileID: 69548962}
   - {fileID: 1109474147}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1895440851
 PrefabInstance:
@@ -31823,3 +31928,100 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
   m_PrefabInstance: {fileID: 194247986}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1025193543497706194
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1648981766}
+    m_Modifications:
+    - target: {fileID: 1025193543220605049, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_Name
+      value: Escape Window Container
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025193543220605054, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cd4ce5d3b464b4e63a781f74deeb6da5, type: 3}
