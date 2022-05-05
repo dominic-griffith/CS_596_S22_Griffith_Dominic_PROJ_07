@@ -22729,7 +22729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f1bacb11851f4008aaaafa8789d0cde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doRandomGen: 0
+  doRandomGen: 1
   objectsToPlace: 20000
 --- !u!1001 &1474274984
 PrefabInstance:
