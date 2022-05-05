@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &419098401100151040
 Transform:
@@ -131,6 +131,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rice_1 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
 --- !u!4 &522417999686323552 stripped
@@ -204,6 +212,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
       propertyPath: m_Name
       value: Rice_1 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
@@ -279,6 +295,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rice_1 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
 --- !u!4 &848729224120374937 stripped
@@ -352,6 +376,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
       propertyPath: m_Name
       value: Rice_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
@@ -427,6 +459,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rice_1 (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
 --- !u!4 &1684578828378778831 stripped
@@ -500,6 +540,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
       propertyPath: m_Name
       value: Rice_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
@@ -575,6 +623,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rice_1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
 --- !u!4 &1616455072893439580 stripped
@@ -648,6 +704,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
       propertyPath: m_Name
       value: Rice_1 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
@@ -723,6 +787,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rice_1 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
 --- !u!4 &1214893681440278856 stripped
@@ -796,6 +868,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
       propertyPath: m_Name
       value: Rice_1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
@@ -871,6 +951,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rice_1 (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
 --- !u!4 &2816968068995260701 stripped
@@ -944,6 +1032,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
       propertyPath: m_Name
       value: Rice_1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
@@ -1019,6 +1115,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rice_1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
 --- !u!4 &2446690178622879225 stripped
@@ -1092,6 +1196,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
       propertyPath: m_Name
       value: Rice_1 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
@@ -1167,6 +1279,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rice_1 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
 --- !u!4 &2355496247640561018 stripped
@@ -1240,6 +1360,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
       propertyPath: m_Name
       value: Rice_1 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
@@ -1315,6 +1443,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rice_1 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
 --- !u!4 &3139497541599828068 stripped
@@ -1388,6 +1524,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
       propertyPath: m_Name
       value: Rice_1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
@@ -1463,6 +1607,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rice_1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
 --- !u!4 &2948315068043213825 stripped
@@ -1536,6 +1688,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
       propertyPath: m_Name
       value: Rice_1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
@@ -1611,6 +1771,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rice_1 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
 --- !u!4 &4160653220283544747 stripped
@@ -1684,6 +1852,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
       propertyPath: m_Name
       value: Rice_1 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
@@ -1759,6 +1935,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rice_1 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
 --- !u!4 &5754352127540190752 stripped
@@ -1832,6 +2016,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
       propertyPath: m_Name
       value: Rice_1 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
@@ -1907,6 +2099,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rice_1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
 --- !u!4 &6646477502445802721 stripped
@@ -1980,6 +2180,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
       propertyPath: m_Name
       value: Rice_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
@@ -2055,6 +2263,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rice_1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
 --- !u!4 &8016789150416075399 stripped
@@ -2128,6 +2344,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
       propertyPath: m_Name
       value: Rice_1 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
@@ -2203,6 +2427,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rice_1 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
 --- !u!4 &8528748020657800640 stripped
@@ -2276,6 +2508,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
       propertyPath: m_Name
       value: Rice_1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
@@ -2351,6 +2591,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rice_1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
 --- !u!4 &8913583375216147633 stripped
@@ -2425,6 +2673,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rice_1 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
 --- !u!4 &8914429794552111722 stripped
@@ -2498,6 +2754,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
       propertyPath: m_Name
       value: Rice_1 (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19e60c44d75c04309ae72c581ab51b9f, type: 3}

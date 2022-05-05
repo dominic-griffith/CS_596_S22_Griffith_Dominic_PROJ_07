@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1470725852385224565
 Transform:
@@ -101,6 +101,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus_Crop (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
 --- !u!4 &2807950994342713402 stripped
@@ -175,6 +183,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus_Crop (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
 --- !u!4 &2606693580515456191 stripped
@@ -248,6 +264,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
       propertyPath: m_Name
       value: Cactus_Crop
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}

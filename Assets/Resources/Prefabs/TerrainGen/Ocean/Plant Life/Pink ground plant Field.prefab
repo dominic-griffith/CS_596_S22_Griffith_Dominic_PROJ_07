@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2216830015180806875
 Transform:
@@ -48,7 +48,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8550636032601830811
 Transform:
@@ -89,7 +89,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &371717966436937280
 Transform:
@@ -123,7 +123,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7785544409881848870
 Transform:
@@ -157,7 +157,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6761646081055891189
 Transform:
@@ -191,7 +191,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2572594849391511394
 Transform:
@@ -225,7 +225,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8307044008172121793
 Transform:
@@ -259,7 +259,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2071210163250470150
 Transform:
@@ -293,7 +293,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3178173973266555769
 Transform:
@@ -327,7 +327,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &3098742706826061344
 Transform:
@@ -361,7 +361,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5390818738527061819
 Transform:
@@ -448,6 +448,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus_Crop (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
 --- !u!4 &171891647694128124 stripped
@@ -521,6 +529,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
       propertyPath: m_Name
       value: Cactus_Crop (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
@@ -596,6 +612,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus_Crop (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
 --- !u!4 &737574043383220465 stripped
@@ -669,6 +693,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
       propertyPath: m_Name
       value: Cactus_Crop
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
@@ -744,6 +776,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus_Crop (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
 --- !u!4 &2235425332225752406 stripped
@@ -817,6 +857,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
       propertyPath: m_Name
       value: Cactus_Crop (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
@@ -892,6 +940,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus_Crop (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
 --- !u!4 &3439760694526000013 stripped
@@ -965,6 +1021,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
       propertyPath: m_Name
       value: Cactus_Crop (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
@@ -1040,6 +1104,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus_Crop (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
 --- !u!4 &3011125911657046538 stripped
@@ -1113,6 +1185,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
       propertyPath: m_Name
       value: Cactus_Crop (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
@@ -1188,6 +1268,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus_Crop (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
 --- !u!4 &4014486651060195599 stripped
@@ -1261,6 +1349,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
       propertyPath: m_Name
       value: Cactus_Crop (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
@@ -1336,6 +1432,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus_Crop
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
 --- !u!4 &5185100014162135801 stripped
@@ -1409,6 +1513,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
       propertyPath: m_Name
       value: Cactus_Crop (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
@@ -1484,6 +1596,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus_Crop
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
 --- !u!4 &4834041189415597348 stripped
@@ -1557,6 +1677,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
       propertyPath: m_Name
       value: Cactus_Crop (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
@@ -1632,6 +1760,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus_Crop (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
 --- !u!4 &5231347039898699259 stripped
@@ -1705,6 +1841,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
       propertyPath: m_Name
       value: Cactus_Crop (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
@@ -1780,6 +1924,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus_Crop
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
 --- !u!4 &6122780552858108682 stripped
@@ -1853,6 +2005,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
       propertyPath: m_Name
       value: Cactus_Crop (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
@@ -1928,6 +2088,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus_Crop
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
 --- !u!4 &6460212839182812936 stripped
@@ -2001,6 +2169,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
       propertyPath: m_Name
       value: Cactus_Crop
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
@@ -2076,6 +2252,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus_Crop
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
 --- !u!4 &8036162695313632768 stripped
@@ -2149,6 +2333,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
       propertyPath: m_Name
       value: Cactus_Crop (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
@@ -2224,6 +2416,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus_Crop
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
 --- !u!4 &7852745224425643929 stripped
@@ -2297,6 +2497,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
       propertyPath: m_Name
       value: Cactus_Crop (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
@@ -2372,6 +2580,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus_Crop
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
 --- !u!4 &8475969812787883821 stripped
@@ -2445,6 +2661,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
       propertyPath: m_Name
       value: Cactus_Crop (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
@@ -2520,6 +2744,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cactus_Crop (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
 --- !u!4 &8290220377648543502 stripped
@@ -2593,6 +2825,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
       propertyPath: m_Name
       value: Cactus_Crop
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee8c61e61e27426d8a6df9fc892003e, type: 3}
