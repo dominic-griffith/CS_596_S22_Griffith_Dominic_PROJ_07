@@ -22061,6 +22061,7 @@ GameObject:
   - component: {fileID: 1472597885}
   - component: {fileID: 1472597884}
   - component: {fileID: 1472597888}
+  - component: {fileID: 1472597889}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -22164,6 +22165,19 @@ MonoBehaviour:
     startingHeight: 0
   - textureIndex: 1
     startingHeight: 500
+--- !u!114 &1472597889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472597883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f1bacb11851f4008aaaafa8789d0cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testPrefab: {fileID: 3341321516998351446, guid: 3d83254c0ccbc4049b2904276906759e, type: 3}
 --- !u!1001 &1474274984
 PrefabInstance:
   m_ObjectHideFlags: 0
