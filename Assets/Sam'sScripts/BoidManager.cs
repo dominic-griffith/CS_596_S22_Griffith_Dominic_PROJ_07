@@ -61,6 +61,17 @@ public class BoidManager : MonoBehaviour {
 
             boidBuffer.Dispose ();
         }
+
+        void DeleteBoids()
+        {
+            //delete all the boids this manager is responsible for
+            foreach (Boid b in boids)
+                GameObject.Destroy(b);
+
+            //and then delete this Manager game object
+            GameObject.Destroy(this.gameObject);
+        }
+
     }
 
     public struct BoidData {
