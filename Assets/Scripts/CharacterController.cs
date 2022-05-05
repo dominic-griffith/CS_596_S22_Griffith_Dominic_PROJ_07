@@ -99,7 +99,6 @@ public class CharacterController : MonoBehaviour {
         } else {
             if (Input.GetKeyDown(UP_KEY) && checkIsGrounded()) {
                 rigidbody.AddForce(transform.up * jumpForce);
-                print("JKUMP");
             }
         }
     }
