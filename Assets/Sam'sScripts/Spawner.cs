@@ -7,7 +7,7 @@ public class Spawner : MonoBehaviour {
     public enum GizmoType { Never, SelectedOnly, Always }
 
     public GameObject prefab;
-    public float spawnRadius = 10;
+    public float spawnRadius = 5;
     public int spawnCount = 10;
     public GizmoType showSpawnRegion;
     public int type;
