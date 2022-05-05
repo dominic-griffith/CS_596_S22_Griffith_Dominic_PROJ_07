@@ -50,9 +50,10 @@ public class SpawnerSpawner : MonoBehaviour
                 Debug.Log("terry is COREY" + terrainHeight);
 
                 //check if we are in the water and there is enougph space for a spawner
-                if (waterHeight - terrainHeight > 7)
+                if (waterHeight - terrainHeight > 10)
                 {
-                    pos.y = Random.Range(terrainHeight , waterHeight);
+                    Debug.Log("WE MADE IT!");
+                    pos.y = Random.Range(terrainHeight + 4, waterHeight - 4);
                     foundValid = true;
                     count = 16;
                 }
