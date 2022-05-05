@@ -25,15 +25,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7650118054009245433, guid: bdd28e6d1db6f4f83a5881d795ba344e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 7650118054009245433, guid: bdd28e6d1db6f4f83a5881d795ba344e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 7650118054009245433, guid: bdd28e6d1db6f4f83a5881d795ba344e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.3
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 7650118054009245433, guid: bdd28e6d1db6f4f83a5881d795ba344e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -82,6 +82,33 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7017027657656587331, guid: bdd28e6d1db6f4f83a5881d795ba344e, type: 3}
   m_PrefabInstance: {fileID: 3142114370498541795}
   m_PrefabAsset: {fileID: 0}
+--- !u!136 &2646565461660358036
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5402759505840794784}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.9149996
+  m_Height: 5.8585563
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: -0.42320013}
+--- !u!114 &-1860590048081850560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5402759505840794784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 839a07def6d7b432494488c25d9deeb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goalType: 0
 --- !u!114 &173390498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,17 +128,3 @@ MonoBehaviour:
   avgAvoidanceHeading: {x: 0, y: 0, z: 0}
   centreOfFlockmates: {x: 0, y: 0, z: 0}
   numPerceivedFlockmates: 0
---- !u!136 &2646565461660358036
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5402759505840794784}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 1.9149996
-  m_Height: 5.8585563
-  m_Direction: 2
-  m_Center: {x: 0, y: 0, z: -0.42320013}

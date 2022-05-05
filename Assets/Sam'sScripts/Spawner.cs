@@ -12,7 +12,7 @@ public class Spawner : MonoBehaviour {
     public GizmoType showSpawnRegion;
     public int type;
 
-    void Awake () {
+    void Start () {
         for (int i = 0; i < spawnCount; i++)
         {
             Vector3 pos = transform.position + Random.insideUnitSphere * spawnRadius;
