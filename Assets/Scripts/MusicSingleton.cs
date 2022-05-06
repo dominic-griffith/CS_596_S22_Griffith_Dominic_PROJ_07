@@ -34,6 +34,9 @@ public class MusicSingleton : MonoBehaviour
         }
 
     }
+    public void changeVolume(Slider slider){
+        audio.volume = slider.value;
+    }
 
     // Update is called once per frame
     void Update()
