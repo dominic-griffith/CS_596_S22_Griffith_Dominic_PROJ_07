@@ -79,7 +79,9 @@ public class ProceduralMeshGen : MonoBehaviour {
     }
 
     private void saveMesh() {
+        #if UNITY_EDITOR
         Mesh mesh = generateMesh();
         AssetDatabase.CreateAsset(mesh, "Assets/Resources/" + MESH_SAVE_FILEPATH + ".asset");
+        #endif
     }
 }
